@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700&display=swap");
+
+body{
+  font-family: "Source sans pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background-image: url("img.webp");
+}
+.card-img-top{
+  width: 200px;
+  height: 250px;
+}
+.card:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.movie-app > .row{
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+.container{
+  width: 100%;
+  margin: 1em auto;
+}
+.grid{
+  display: grid;
+  margin-left: .5px;
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 0.2em;
+  justify-content: center;
+}
+h2{
+  background-color: antiquewhite;
+}
+.btn-remove{
+  float: right;
+ margin-left: -3vw;
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: grey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.btn-remove:hover{
+  background-color: darkgray;
+}
+.btn-remove:active {
+  background-color: rgb(77, 77, 77);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
