@@ -91,10 +91,8 @@ function App() {
         <MovieBox movie={movie}
         handelResentlyWatched ={(movie)=> addResentlyWatched(movie)}
          />
-         )
-         )}
+         ))}
         </div>
- 
     </div>
     
     <h2>Recently Watched</h2>
@@ -102,9 +100,7 @@ function App() {
       <div className='container'>
       <div className='row'>
         {movies.map(resentlyWatched => (
-           <MovieBox movie ={resentlyWatched}
-           handelResentlyWatched ={(movie)=> addResentlyWatched(movie)}
-           />
+           <MovieBox movie ={resentlyWatched}/>
         ))}
       </div>
       <button className='btn-remove' onClick={removeResentlyWatched}>Remove All</button>

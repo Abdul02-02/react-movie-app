@@ -2,7 +2,7 @@ import {Modal} from "react-bootstrap";
 import React, {useState} from "react";
 import './App.css';
 
-const MovieBox =({movie, handelResentlyWatched})=>{
+const MovieBox =({movie, handelResentlyWatched}) => {
 
     const[show, setShow]=useState(false);
 
@@ -15,7 +15,7 @@ const MovieBox =({movie, handelResentlyWatched})=>{
             <div className="card-body">
              <img className="card-img-top" src={`https://image.tmdb.org/t/p/w500/${movie?movie.poster_path:""}`} alt="movieImg"/>
              <div className="card-body">
-                <div onClick={() => handelResentlyWatched(movie)}><button type="button" className="btn btn-dark" onClick={handleShow}>View More</button></div>
+                <div onClick={() =>handelResentlyWatched(movie)}><button type="button" className="btn btn-dark" onClick={handleShow}>View More</button></div>
                 <Modal show={show} onHide={handleCLose}>
                     <Modal.Header closeButton>
                         <Modal.Title></Modal.Title>
